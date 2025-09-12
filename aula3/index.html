@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Formulários</title>
+</head>
+<body>
+    <h1>Aula 3 - Formulários</h1>
+    <form action="/submit" method="post">
+        <input type="text" name="nome" maxlength="50" size="30" placeholder="Digite seu nome" required> <br>
+        <input type="password" name="senha" maxlength="20" placeholder="Digite sua senha" required> <br>
+        <input type="password" name="confirmar_senha" placeholder="Confirme sua senha" pattern=".{8,}"> <br>
+        <input type="email" name="email" placeholder="Digite seu email" required> <br>
+        <input type="number" name="quantidade" min="1" max="100" step="1" value="50">
+        <input type="file" name="arquivo" accept=".jpg, .png, .pdf" multiple>
+        <label for="volume">Volume</label>
+        <input type="range" name="volume" min="0", max="100" value="5">
+        <textarea name="mensage" rows="4" cols="50" maxlength="2000" placeholder="Escreva sua mensagem"></textarea>
+        <br>
+
+        <label>Gênero</label>
+        <br>
+        <input type="radio" name="genero" value="masculino" id="masc" checked>
+
+        <input type="radio" name="genero" value="feminino" id="fem" checked>
+        <label for="fem">Feminino</label>
+
+        <br>
+        <input type="checkbox" name="preferencias" value="musica" id="musica" checked>
+        <label for="musica">Música</label>
+
+        <br>
+        <input type="checkbox" name="esporte" value="esporte" id="esporte" checked>
+        <label for="musica">Esporte</label>
+
+        <br>
+        <select name="opcoes" id="opcoes">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+        </select>
+
+        <select name="multi_opcoes" multiple-size="3">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="submit" value="Limpar">
+        <button type="button" onclick="alert('Você clicou!')">Clique aqui</button>
+        
+    </form>
+</body>
+</html>
