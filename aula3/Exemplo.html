@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Completo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f9;
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh; margin: 0; padding: 30px;
+    }
+    form {
+      background: #fff; padding: 25px; border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 500px; width: 100%; border: 2px solid #007bff;
+    }
+    h2 { text-align: center; color: #007bff; margin-bottom: 25px; }
+    label { display: block; margin-bottom: 5px; font-weight: 600; }
+    input, select, textarea {
+      width: 100%; padding: 12px; border: 1px solid #007bff; border-radius: 8px;
+      background-color: #f1f5ff; transition: all 0.3s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #28a745; background-color: #e9f7ef; outline: none;
+    }
+    button {
+      width: 100%; padding: 12px; background: #28a745; border: none; color: #fff;
+      font-size: 16px; border-radius: 8px; cursor: pointer;
+    }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Formulário Completo</h2>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" required>
+
+    <label for="date">Data de Nascimento:</label>
+    <input type="date" id="date" required>
+
+    <label for="number">Idade:</label>
+    <input type="number" id="number" min="0" max="120">
+
+    <label>Gênero:</label>
+    <input type="radio" name="gender" value="male"> Masculino
+    <input type="radio" name="gender" value="female"> Feminino
+
+    <label>Idiomas:</label>
+    <input type="checkbox" name="language" value="portuguese"> Português
+    <input type="checkbox" name="language" value="english"> Inglês
+
+    <label for="country">País:</label>
+    <select id="country">
+      <option value="brasil">Brasil</option>
+      <option value="eua">EUA</option>
+    </select>
+
+    <label for="bio">Biografia:</label>
+    <textarea id="bio" rows="4"></textarea>
+
+    <label for="file">Carregar Arquivo:</label>
+    <input type="file" id="file">
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
