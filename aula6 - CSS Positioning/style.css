@@ -1,0 +1,24 @@
+div{
+    outline-style: dashed;
+    display: block;
+}
+
+button {
+    outline: 2px solid blue;
+    outline-offset: 20px;
+}
+
+input:focus {
+    outline: 3px solid green;
+}
+
+span {
+    display: inline;
+}
+
+.teste {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
