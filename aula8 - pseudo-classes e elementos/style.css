@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+button:first-child {
+    background-color: lightblue;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #4c0f9b;
+    color: #ffff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+p::first-line {
+	color: blue;
+}
+
+p:not(.highlight) {
+	color: gray;
+}
+
+p:first-of-type {
+	color: red;
+}
+
+p:nth-child(2) {
+    color: red;
+}
+
+a:link { 
+	color: blue;
+}
+
+a:visited { 
+	color: purple;
+}
+
+a:hover { 
+	color: red;
+}
+
+a:active { 
+	color: yellow;
+}
+
+input:in-range {
+	background-color: lightgreen;
+}
+
+h1::after {
+	content: " \2022";
+	color: blue;
+}
+
+h1::before {
+	content: "Capítulo: ";
+	font-weight: bold;
+}
+
+::selection {
+	background-color: yellow;
+	color: black;
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
