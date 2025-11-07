@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste Módulos</title>
+  <script src="app.js"></script>
+</head>
+<body>
+
+    <label for="name" id="n2">nome</label>
+    <input type="text">
+    <label for="name" id="n1">nome</label>
+    <input type="text">
+
+  <button id="btn" onclick="executarCalculos()">Clique aqui</button>
+
+  <div id="saida"></div>
+
+  <script type="module" src="app.js">
+    document.getElementById('btn').addEventListener('click', executarCalculos)
+  </script>
+
+</body>
+</html>
