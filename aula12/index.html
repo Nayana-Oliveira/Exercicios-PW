@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- linkar evento no button -->
+    <button id="meuButton" onclick="aoClicar()">Clique em mim</button>
+
+    <script>
+        function aoClicar() {
+            alert("Você clicou no botão!");
+        }
+
+        const botao = document.querySelector("#meuButton");
+        botao.addEventListener("click", aoClicar);
+
+        //remover listener
+        botao.removeEventListener("click", aoClicar);
+    </script>
+</body>
+
+</html>
